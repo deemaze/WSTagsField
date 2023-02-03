@@ -12,10 +12,12 @@ public struct WSTag: Hashable {
 
     public let text: String
     public let context: AnyHashable?
+    public let groupId: Int?
 
-    public init(_ text: String, context: AnyHashable? = nil) {
+    public init(_ text: String, context: AnyHashable? = nil, groupId: Int? = nil) {
         self.text = text
         self.context = context
+        self.groupId = groupId
     }
 
     public func equals(_ other: WSTag) -> Bool {

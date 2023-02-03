@@ -604,7 +604,7 @@ extension WSTagsField {
         return super.inputAccessoryView
     }
 
-    open var inputFieldAccessoryView: UIView? {
+    public var inputFieldAccessoryView: UIView? {
         get { return textField.inputAccessoryView }
         set { textField.inputAccessoryView = newValue }
     }
